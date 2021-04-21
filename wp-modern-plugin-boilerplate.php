@@ -49,4 +49,8 @@ $plugin = new \Fedek6\WpMPB\Bootstrap($pluginName, $assetsUrl, '1.0.0');
 $plugin->registerComponent('frontendAssets', '\Fedek6\WpMPB\Components\FrontendAssets');
 $plugin->registerComponent('adminAssets', '\Fedek6\WpMPB\Components\AdminAssets');
 
+// Plugin lifecycle.
+register_activation_hook( __FILE__, ['\Fedek6\WpMPB\AbstractActivation', 'run']);
+register_deactivation_hook( __FILE__, ['\Fedek6\WpMPB\AbstractDeactivation', 'run']);
+
 $plugin->run();
