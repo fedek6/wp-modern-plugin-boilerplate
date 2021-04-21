@@ -10,11 +10,17 @@ class Bootstrap
 {
     private $components = [];
 
-    private $hooksCollection;
+    private $version;
 
-    public function __construct()
+    private $assetsUrl;
+
+    private $pluginName;
+
+    public function __construct(string $pluginName, string $assetsUrl, string $version)
     {
-        $this->hooksCollection = new HooksCollection;
+        $this->pluginName = $pluginName;
+        $this->assetsUrl = $assetsUrl;
+        $this->version = $version;
     }
 
     public function registerComponent(string $name, string $component)
@@ -29,10 +35,10 @@ class Bootstrap
     public function run() 
     {
         foreach ($this->components as $component) {
-            $component = new $component($this->hooksCollection);
-            $component->run();
+            $hooksCollection = new HooksCollection;
+            $componentInstance = new $component($this->pluginName, $this->assetsUrl, $this->version);
+            $componentInstance->run();
+            $hooksCollection->run();
         }
-
-        $this->hooksCollection->run();
     }
 }

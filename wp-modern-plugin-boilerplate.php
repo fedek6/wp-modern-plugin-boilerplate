@@ -33,7 +33,20 @@ if (!defined('WPINC')) {
  */
 require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
-$pluginInstance = new \Fedek6\WpMPB\Bootstrap();
+/**
+ * Bootstrap plugin.
+ */
 
-$pluginInstance->registerComponent('adminAssets', '\Fedek6\WpMPB\Components\AdminAssets');
-$pluginInstance->run();
+/** @var string $assetsUrl */
+$assetsUrl = plugin_dir_url(__FILE__) . 'assets/';
+
+/** @var string $pluginName */
+$pluginName = 'WpMPB';
+
+$plugin = new \Fedek6\WpMPB\Bootstrap($pluginName, $assetsUrl, '1.0.0');
+
+// Add components.
+$plugin->registerComponent('frontendAssets', '\Fedek6\WpMPB\Components\FrontendAssets');
+$plugin->registerComponent('adminAssets', '\Fedek6\WpMPB\Components\AdminAssets');
+
+$plugin->run();

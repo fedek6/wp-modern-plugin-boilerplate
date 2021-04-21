@@ -7,20 +7,20 @@ namespace Fedek6\WpMPB\Components;
 use Fedek6\WpMPB\Core\Component;
 use Fedek6\WpMPB\Core\Hook;
 
-class AdminAssets extends Component
+class FrontendAssets extends Component
 {
     public function loadAssets()
     {
-        $cssName = $this->pluginName . '-backend';
+        $cssName = $this->pluginName . '-frontend';
 
-        wp_register_style($cssName, $this->assetsUrl . 'admin-style.css', false, $this->version);
+        wp_register_style($cssName, $this->assetsUrl . 'css/frontend.css', false, $this->version);
         wp_enqueue_style($cssName);
     }
 
     public function init()
     {
         $hook = new Hook(
-            'admin_enqueue_scripts',
+            'wp_enqueue_scripts',
             $this,
             'loadAssets'
         );
