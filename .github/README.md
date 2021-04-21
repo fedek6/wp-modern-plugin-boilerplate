@@ -29,5 +29,5 @@ Replace these handlers with your information:
 
 ### Namespaces
 
-* Find and replace `Fedek6\WpModernPluginBoilerplate\` → `{Vendor}\{PluginNamespace}\`
+* Find and replace `Fedek6\WpMPB\` → `{Vendor}\{PluginNamespace}\`
 * Remember to edit also the composer file.
