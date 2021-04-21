@@ -1,1 +1,0 @@
-# wp-modern-plugin-boilerplate
