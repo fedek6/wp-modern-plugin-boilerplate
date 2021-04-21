@@ -2,9 +2,9 @@
 
 # WP Modern Plugin Boilerplate 
 
-A standardized, organized, modern, object-oriented foundation for building high-quality WordPress Plugins.
+A standardized, organized, modern, object-oriented foundation for building high-quality WordPress Plugins (based on [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)).
 
-This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and instead fully utilizes [PSR](https://www.php-fig.org/psr/).
+This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and instead of it fully utilizes [PSR](https://www.php-fig.org/psr/).
 
 ## What's built in?
 
@@ -13,7 +13,9 @@ This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress
 
 ## Usage
 
-To customize your plugin for production you'll need to replace some string occurrences. Use your IDE's find in files.
+Main idea behind this boilerplate is to keep potential code changes as much we can inside the main plugin file (`wp-modern-plugin-boilerplate.php`).
+
+To customize your plugin for production you'll need to replace some string occurrences. Use your IDE's find in files functionality.
 
 ### Replacement handlers
 
