@@ -1,0 +1,13 @@
+{
+    "name": "fedek6/wp-modern-boilerplate",
+    "description": "A standardized, organized, modern, object-oriented foundation for building high-quality WordPress Plugins.",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konrad Fedorczyk",
+            "email": "fedek6@gmail.com"
+        }
+    ],
+    "require": {}
+}
