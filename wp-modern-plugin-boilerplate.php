@@ -48,7 +48,7 @@ $plugin = new \Fedek6\WpMPB\Bootstrap($pluginName, $assetsUrl, __DIR__, '1.0.0')
 // Add components.
 $plugin->registerComponent('frontendAssets', '\Fedek6\WpMPB\Components\FrontendAssets');
 $plugin->registerComponent('adminAssets', '\Fedek6\WpMPB\Components\AdminAssets');
-$plugin->registerComponent('adminAssets', '\Fedek6\WpMPB\Components\I18n');
+$plugin->registerComponent('i18n', '\Fedek6\WpMPB\Components\I18n');
 
 // Plugin lifecycle.
 register_activation_hook( __FILE__, ['\Fedek6\WpMPB\AbstractActivation', 'run']);
