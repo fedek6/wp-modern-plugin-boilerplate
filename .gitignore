@@ -1,3 +1,4 @@
 vendor
 node_modules
 .tscache
+assets/dist

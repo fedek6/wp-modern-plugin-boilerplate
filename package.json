@@ -18,6 +18,8 @@
   "homepage": "https://github.com/fedek6/wp-modern-plugin-boilerplate#readme",
   "devDependencies": {
     "grunt": "^1.3.0",
+    "grunt-browserify": "^6.0.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-ts": "^6.0.0-beta.22",
     "typescript": "^4.2.4"
   }
