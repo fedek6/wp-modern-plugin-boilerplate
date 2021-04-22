@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Fedek6\WpMPB\Core;
 
-abstract class Component implements ComponentInterface
+abstract class Component
 {
     protected $hooks;
 
@@ -28,6 +28,8 @@ abstract class Component implements ComponentInterface
         $this->version = $version;
         $this->hooks = new HooksCollection;
     }
+
+    abstract protected function init();
 
     public function run()
     {

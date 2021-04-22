@@ -13,11 +13,11 @@ class FrontendAssets extends Component
     {
         $cssName = $this->pluginName . '-frontend';
 
-        wp_register_style($cssName, $this->assetsUrl . 'css/frontend.css', false, $this->version);
+        wp_register_style($cssName, $this->assetsUrl . '/css/frontend.css', false, $this->version);
         wp_enqueue_style($cssName);
     }
 
-    public function init()
+    protected function init()
     {
         $hook = new Hook(
             'wp_enqueue_scripts',

@@ -13,11 +13,11 @@ class AdminAssets extends Component
     {
         $cssName = $this->pluginName . '-backend';
 
-        wp_register_style($cssName, $this->assetsUrl . 'admin-style.css', false, $this->version);
+        wp_register_style($cssName, $this->assetsUrl . '/css/admin-style.css', false, $this->version);
         wp_enqueue_style($cssName);
     }
 
-    public function init()
+    protected function init()
     {
         $hook = new Hook(
             'admin_enqueue_scripts',

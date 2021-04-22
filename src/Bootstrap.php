@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Fedek6\WpMPB;
 
-use Fedek6\WpMPB\Core\HooksCollection;
-
 class Bootstrap
 {
     private $components = [];
@@ -17,6 +15,8 @@ class Bootstrap
     private $pluginName;
 
     private $pluginPath;
+
+    private $registeredComponents = [];
 
     public function __construct(
         string $pluginName,
@@ -41,18 +41,15 @@ class Bootstrap
 
     public function run()
     {
-        foreach ($this->components as $component) {
-            $hooksCollection = new HooksCollection;
-
-            $componentInstance = new $component(
+        foreach ($this->components as $name => $component) {
+            $this->registeredComponents[$name] = new $component(
                 $this->pluginName,
                 $this->assetsUrl,
                 $this->pluginPath,
                 $this->version
             );
 
-            $componentInstance->run();
-            $hooksCollection->run();
+            $this->registeredComponents[$name]->run();
         }
     }
 }

@@ -38,7 +38,7 @@ require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
  */
 
 /** @var string $assetsUrl */
-$assetsUrl = plugin_dir_url(__FILE__) . 'assets/';
+$assetsUrl = plugin_dir_url(__FILE__) . 'assets';
 
 /** @var string $pluginName */
 $pluginName = 'WpMPB';
