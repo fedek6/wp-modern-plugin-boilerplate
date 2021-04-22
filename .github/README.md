@@ -31,3 +31,8 @@ Replace these handlers with your information:
 
 * Find and replace `Fedek6\WpMPB\` → `{Vendor}\{PluginNamespace}\`
 * Remember to edit also the composer file.
+
+## Assets building
+
+Please install dependencies using `yarn install`.
+
