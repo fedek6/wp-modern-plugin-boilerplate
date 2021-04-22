@@ -7,7 +7,6 @@ namespace Fedek6\WpMPB\Core;
 /**
  * Hook is universal object for storing WP hooks.
  * 
- * @uses        WP
  * @package     wp-modern-plugin-boilerplate
  * @subpackage  core
  * @version     1.0.0
