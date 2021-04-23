@@ -26,7 +26,7 @@ class AdminAssets extends Component
 
         wp_register_style(
             $cssName,
-            $this->assetsUrl . '/css/admin.css',
+            $this->assetsUrl . '/css/backend.css',
             false,
             $this->version
         );
@@ -43,7 +43,7 @@ class AdminAssets extends Component
 
         wp_register_script(
             $jsName,
-            $this->assetsUrl . '/js/admin.js',
+            $this->assetsUrl . '/js/backend.js',
             false,
             $this->version
         );

@@ -4,12 +4,14 @@
 
 A standardized, organized, modern, object-oriented foundation for building high-quality WordPress Plugins (based on [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)).
 
-This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and instead of it fully utilizes [PSR](https://www.php-fig.org/psr/).
+This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and instead of it fully utilizes the [PSR](https://www.php-fig.org/psr/).
 
 ## What's built in?
 
 * Composer.
 * PHPUnit.
+* TypeScript.
+* Sass.
 
 ## Usage
 
@@ -34,5 +36,7 @@ Replace these handlers with your information:
 
 ## Assets building
 
-Please install dependencies using `yarn install`.
+Edit assets in `src` directory. And run following commands:
 
+* Please install dependencies using `yarn install`.
+* Use `grunt` to build assets.

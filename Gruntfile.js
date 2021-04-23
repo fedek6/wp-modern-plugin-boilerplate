@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     browserify: {
       admin: {
         src: "./src/backend/js/main.ts",
-        dest: "./assets/js/admin.js",
+        dest: "./assets/js/backend.js",
       },
       frontend: {
         src: "./src/frontend/js/main.ts",
@@ -23,8 +23,20 @@ module.exports = function (grunt) {
         },
       },
     },
+    sass: {                             
+      dist: {                   
+        options: {                      
+          style: "compressed"
+        },
+        files: {                         
+          "assets/css/frontend.css": "src/frontend/sass/main.scss",       
+          "assets/css/backend.css": "src/backend/sass/main.scss",   
+        }
+      }
+    }
   });
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks("grunt-browserify");
-  grunt.registerTask("default", ["clean", "browserify"]);
+  grunt.loadNpmTasks("grunt-contrib-sass");
+  grunt.registerTask("default", ["clean", "browserify", "sass"]);
 };
