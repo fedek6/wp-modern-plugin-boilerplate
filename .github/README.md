@@ -44,3 +44,4 @@ Edit assets in `src` directory. And run following commands:
 ## Other tools
 
 * Use `yarn format` to run prettier on JS source files.
+* Use `yarn lint` for ESLint.
