@@ -1,2 +1,2 @@
-import {hello} from "./components/hello";
+import { hello } from "./components/hello";
 console.log(hello);
