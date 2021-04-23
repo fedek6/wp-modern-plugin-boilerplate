@@ -1,4 +1,5 @@
 module.exports = {
+  "ignorePatterns": ["assets/*", "node_modules/*", ".eslintrc.js", "Gruntfile.js"],
   extends: [
     "airbnb-typescript/base",
     "plugin:@typescript-eslint/recommended",
