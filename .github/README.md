@@ -12,6 +12,8 @@ This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress
 * PHPUnit.
 * TypeScript.
 * Sass.
+* ESLint.
+* Prettier.
 
 ## Usage
 
