@@ -2,7 +2,7 @@
 
 # WP Modern Plugin Boilerplate 
 
-A standardized, organized, modern, object-oriented foundation for building high-quality WordPress Plugins (based on [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)).
+A standardized, organized, modern, object-oriented foundation for building high-quality WordPress Plugins (based on [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)). It supports modern JavaScript workflow and automated assets building out-of-box.
 
 This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and instead of it fully utilizes the [PSR](https://www.php-fig.org/psr/).
 
@@ -14,6 +14,7 @@ This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress
 * Sass.
 * ESLint.
 * Prettier.
+* Grunt.
 
 ## Usage
 
