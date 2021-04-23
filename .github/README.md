@@ -2,11 +2,13 @@
 
 # WP Modern Plugin Boilerplate 
 
-A standardized, well organized, modern, object-oriented foundation for building high-quality WordPress Plugins (based on [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)). It supports modern JavaScript workflow and automated assets building out-of-box.
+A standardized, well organized, modern, object-oriented foundation for building high-quality WordPress Plugins (based on the [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)). It supports modern JavaScript workflow and automated assets building out-of-box.
 
 This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and instead of it fully utilizes the [PSR](https://www.php-fig.org/psr/).
 
-It is the simplest solution for modern JS / PHP workflow!
+It is the simplest solution for modern JS / PHP workflow! 
+
+If you hate WordPress the same as me (and you still need to use it) — it is perfect boilerplate for you :)
 
 ## What's built in?
 
