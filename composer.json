@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Fedek6\\WpMPB\\": "src"
+      "Fedek6\\WpMPB\\": "plugin"
     }
   },
   "require-dev": {
