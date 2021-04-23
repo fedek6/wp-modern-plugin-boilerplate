@@ -22,7 +22,7 @@ It is the simplest solution for modern JS / PHP workflow!
 
 Main idea behind this boilerplate is to keep potential code changes as much we can inside the main plugin file (`wp-modern-plugin-boilerplate.php`).
 
-### How to add new functionality?
+### How to add a new functionality?
 
 Simply create a new class in `plugin\Components` (or your own namespace) and register it in main plugin file:
 
