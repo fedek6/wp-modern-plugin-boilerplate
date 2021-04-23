@@ -6,6 +6,8 @@ A standardized, well organized, modern, object-oriented foundation for building 
 
 This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and instead of it fully utilizes the [PSR](https://www.php-fig.org/psr/).
 
+It is the simplest solution for modern JS / PHP workflow!
+
 ## What's built in?
 
 * Composer.
@@ -19,6 +21,22 @@ This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress
 ## Usage
 
 Main idea behind this boilerplate is to keep potential code changes as much we can inside the main plugin file (`wp-modern-plugin-boilerplate.php`).
+
+### How to add new functionality?
+
+Simply create a new class in `plugin\Components` (or your own namespace) and register it in main plugin file:
+
+```php
+$plugin = new \Fedek6\WpMPB\Bootstrap($pluginName, $assetsUrl, __DIR__, '1.0.0');
+$plugin->registerComponent(
+    'frontendAssets'
+    '\Fedek6\WpMPB\Components\FrontendAssets'
+);
+```
+
+Please check provided components for code examples.
+
+## Customization
 
 To customize your plugin for production you'll need to replace some string occurrences. Use your IDE's find in files functionality.
 
