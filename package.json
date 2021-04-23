@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "assets": "grunt",
-    "format": "prettier --write \"src/{backend,frontend}/js/**/*.{ts,js}\"",
+    "format": "prettier --write \"src/{backend,frontend}/**/*.{ts,js,scss}\"",
     "lint": "eslint \"src/{backend,frontend}/js/**/*.{ts,js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
