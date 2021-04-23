@@ -37,7 +37,9 @@ Replace these handlers with your information:
 * Find and replace `Fedek6\WpMPB\` → `{Vendor}\{PluginNamespace}\`
 * Remember to edit also the composer file.
 
-## Assets building
+## Installation & assets building
+
+Run `composer update` to install PHP dependecies.
 
 Edit assets in `src` directory. And run following commands:
 
