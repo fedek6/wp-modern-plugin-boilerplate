@@ -39,7 +39,7 @@ Replace these handlers with your information:
 
 ## Installation & assets building
 
-Run `composer update` to install PHP dependecies.
+Run `composer update` to install PHP dependencies.
 
 Edit assets in `src` directory. And run following commands:
 
