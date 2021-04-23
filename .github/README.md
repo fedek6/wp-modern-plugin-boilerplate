@@ -38,5 +38,9 @@ Replace these handlers with your information:
 
 Edit assets in `src` directory. And run following commands:
 
-* Please install dependencies using `yarn install`.
-* Use `grunt` to build assets.
+* Please install node dependencies using `yarn install`.
+* Use `yarn assets` to build assets.
+
+## Other tools
+
+* Use `yarn format` to run prettier on JS source files.
