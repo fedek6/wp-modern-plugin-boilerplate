@@ -43,7 +43,7 @@ class AdminAssets extends Component
 
         wp_register_script(
             $jsName,
-            $this->assetsUrl . '/dist/js/admin.js',
+            $this->assetsUrl . '/js/admin.js',
             false,
             $this->version
         );
