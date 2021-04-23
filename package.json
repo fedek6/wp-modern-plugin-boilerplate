@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "assets": "grunt",
     "format": "prettier --write \"src/{backend,frontend}/js/**/*.{ts,js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +25,7 @@
     "grunt": "^1.3.0",
     "grunt-browserify": "^6.0.0",
     "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-sass": "^2.0.0",
     "prettier": "^2.2.1",
     "tsify": "^5.0.2",
     "typescript": "^4.2.4"
