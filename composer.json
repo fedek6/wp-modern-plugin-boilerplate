@@ -14,7 +14,15 @@
       "Fedek6\\WpMPB\\": "plugin"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Fedek6\\WpMPB\\Tests\\": "tests"
+    }
+  },
   "require-dev": {
     "phpunit/phpunit": "^7"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --testdox --verbose --colors tests"
   }
 }
