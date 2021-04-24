@@ -8,7 +8,7 @@ This boilerplate breaks dumb [WordPress Coding Standards](https://make.wordpress
 
 It is the simplest solution for modern JS / PHP workflow! 
 
-If you hate WordPress the same as me (and you still need to use it) — it is perfect boilerplate for you :)
+If you hate WordPress the same as me (and you still need to use it) — it is a perfect boilerplate for you :)
 
 ## What's built in?
 
@@ -22,7 +22,7 @@ If you hate WordPress the same as me (and you still need to use it) — it is pe
 
 ## Usage
 
-Main idea behind this boilerplate is to keep potential code changes as much we can inside the main plugin file (`wp-modern-plugin-boilerplate.php`).
+Main idea behind this boilerplate is to keep potential code changes as much we can inside the main plugin file (`wp-modern-plugin-boilerplate.php`) and so-called component classes.
 
 ### How to add a new functionality?
 
@@ -30,6 +30,8 @@ Simply create a new class in `plugin\Components` (or your own namespace) and reg
 
 ```php
 $plugin = new \Fedek6\WpMPB\Bootstrap($pluginName, $assetsUrl, __DIR__, '1.0.0');
+
+// Component: plugin/Components/FrontendAssets.php
 $plugin->registerComponent(
     'frontendAssets'
     '\Fedek6\WpMPB\Components\FrontendAssets'
