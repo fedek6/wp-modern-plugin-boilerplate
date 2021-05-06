@@ -73,3 +73,15 @@ Edit assets in `src` directory. And run following commands:
 * Use `yarn format` to run prettier on JS source files.
 * Use `yarn lint` for ESLint.
 * Use `composer test` for PHPUnit.
+
+## Deployment
+
+If your plugin is production ready, you can run bundler script:
+
+```bash
+./bundler.sh
+```
+
+This will create a zip file with your plugin. 
+
+__Notice__: Please remember to adjust plugin name in the bundler script.
