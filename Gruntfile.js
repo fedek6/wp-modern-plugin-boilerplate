@@ -23,6 +23,14 @@ module.exports = function (grunt) {
         },
       },
     },
+    uglify: {
+      dist: {
+        files: {
+          "./assets/js/frontend.min.js": ["./assets/js/frontend.js"],
+          "./assets/js/backend.min.js": ["./assets/js/backend.js"],
+        }
+      }
+    },
     sass: {                             
       dist: {                   
         options: {                      
@@ -38,5 +46,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks("grunt-browserify");
   grunt.loadNpmTasks("grunt-contrib-sass");
-  grunt.registerTask("default", ["clean", "browserify", "sass"]);
+  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.registerTask("default", ["clean", "browserify", "uglify", "sass"]);
 };
