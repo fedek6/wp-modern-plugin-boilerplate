@@ -24,6 +24,11 @@ module.exports = function (grunt) {
       },
     },
     uglify: {
+      options: {
+        compress: {
+          drop_console: true
+        }
+      },
       dist: {
         files: {
           "./assets/js/frontend.min.js": ["./assets/js/frontend.js"],
