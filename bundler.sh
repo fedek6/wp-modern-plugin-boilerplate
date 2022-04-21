@@ -1,5 +1,6 @@
 #!/bin/bash  
-NAME='wp-modern-plugin-boilerplate'
+NAME=$(basename $PWD)
+echo "Zipping plugin to ${NAME} 🔥"
 cd ..
 zip -r "${NAME}.zip" "./${NAME}" -x \
 "**/.git*" \
