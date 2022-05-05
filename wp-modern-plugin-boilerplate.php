@@ -41,7 +41,7 @@ require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 $assetsUrl = plugin_dir_url(__FILE__) . 'assets';
 
 /** @var string $pluginName */
-$pluginName = 'WpMPB';
+$pluginName = basename(__DIR__);
 
 $plugin = new \Fedek6\WpMPB\Bootstrap($pluginName, $assetsUrl, __DIR__, '1.0.0');
 
