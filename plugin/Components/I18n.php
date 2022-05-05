@@ -12,7 +12,7 @@ use Fedek6\WpMPB\Core\Hook;
  * 
  * @package     wp-modern-plugin-boilerplate
  * @subpackage  core
- * @version     1.0.0
+ * @version     1.0.1
  * @author      Konrad Fedorczyk <contact@realhe.ro>
  */
 class I18n extends Component
@@ -27,7 +27,7 @@ class I18n extends Component
         load_plugin_textdomain( 
             $this->pluginName, 
             false, 
-            $this->pluginPath . '/languages' 
+            $this->pluginName . '/languages' 
         );
     }
 
